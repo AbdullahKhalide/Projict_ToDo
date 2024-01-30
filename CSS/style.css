@@ -1,0 +1,69 @@
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 500px;
+  margin: 20px auto;
+}
+.container .form{
+  display: flex;
+  background-color: #eee;
+  padding: 20px;
+  border-radius: 6px;
+  align-items: center; 
+}
+.container .form .input{
+   border: 1px solid #ddd;
+   padding: 10px;
+  border-radius: 6px;
+  flex: 1;
+}
+.container .form .input:focus{
+  outline: none;
+}
+.container .form .add{
+  background-color: #f44336;
+  border: none;
+  border-radius: 6px;
+  color: white;
+  padding: 10px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.container .tasks {
+  height: 40px;
+  margin-top: 20px;
+  border-radius: 6px;
+  background-color: #eee;
+}
+
+.container .tasks .task{
+  background-color: white;
+   border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+  align-items: center;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 1px solid #ccc;
+}
+.tasks .task:not(:last-child){
+  margin-bottom: 15px;
+}
+.tasks .task:hover{
+  background-color: #f7f7f7;
+}
+.tasks .task.done{
+  opacity: 0.5;
+}
+.tasks .task span{
+  font-weight: bold;
+  font-size: 10px;
+  background-color: red;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  cursor: pointer;
+}
